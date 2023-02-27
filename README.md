@@ -5,69 +5,90 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.
+  
+Após um esforço contínuo devido a minha primeira experiência com o framework NestJS eu concluí o desafio utilizando o MongoDB como banco de dados, Node.js com o framework Nest e TypeScript para a criação de uma API CRUD. Além disso, utilizei o Socket.IO para implementar websockets que permitem comunicação em tempo real com os usuários. Realizei testes unitários utilizando o Jest, que estão localizados em uma branch separada chamada "tests" embora alguns testes estejam incompletos.
 
-## Description
+Para testar o projeto em sua máquina, siga as instruções abaixo:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Instale as dependências do projeto utilizando o NPM (as depêndencias do projeto ficam localizadas no final deste READ-ME):
 
-## Installation
+npm install
 
-```bash
-$ npm install
-```
+Inicie o servidor da API:
 
-## Running the app
+npm run start
 
-```bash
-# development
-$ npm run start
+Abra a aplicação em um navegador web para verificar seu funcionamento (embora o projeto não tenha um front-end):
 
-# watch mode
-$ npm run start:dev
+http://localhost:3000
 
-# production mode
-$ npm run start:prod
-```
+Obrigado pela oportunidade de participar desse desafio. Estou animado para discutir mais sobre o meu projeto acaso houver uma oportunidade, sigo a disposição!
 
-## Test
+Marcos Santos
 
-```bash
-# unit tests
-$ npm run test
+depêndencias:
 
-# e2e tests
-$ npm run test:e2e
+├── @nestjs/axios@2.0.0
 
-# test coverage
-$ npm run test:cov
-```
+├── @nestjs/cli@9.2.0
 
-## Support
+├── @nestjs/common@9.3.9
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+├── @nestjs/core@9.3.9
 
-## Stay in touch
+├── @nestjs/mapped-types@1.2.2
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+├── @nestjs/platform-express@9.3.9
 
-## License
+├── @nestjs/platform-socket.io@9.3.9
 
-Nest is [MIT licensed](LICENSE).
+├── @nestjs/schematics@9.0.4
+
+├── @nestjs/testing@9.3.9
+
+├── @nestjs/websockets@9.3.9
+
+├── @types/express@4.17.17
+
+├── @types/jest@29.2.4
+
+├── @types/node@18.11.18
+
+├── @types/supertest@2.0.12
+
+├── @typescript-eslint/eslint-plugin@5.53.0
+
+├── @typescript-eslint/parser@5.53.0
+
+├── axios@1.3.4
+
+├── eslint-config-prettier@8.6.0
+
+├── eslint-plugin-prettier@4.2.1
+
+├── eslint@8.34.0
+
+├── jest@29.3.1
+
+├── mongoose@6.10.0
+
+├── prettier@2.8.4
+
+├── reflect-metadata@0.1.13
+
+├── rxjs@7.8.0
+
+├── source-map-support@0.5.21
+
+├── supertest@6.3.3
+
+├── ts-jest@29.0.3
+
+├── ts-loader@9.4.2
+
+├── ts-node@10.9.1
+
+├── tsconfig-paths@4.1.1
+
+└── typescript@4.9.5
