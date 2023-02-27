@@ -21,7 +21,8 @@ mongoose.set('strictQuery', false);
     },
     {
       provide: 'DEVICE_MODEL',
-      useFactory: (connection: Connection) => connection.model('Device', DeviceSchema),
+      useFactory: (connection: Connection) =>
+        connection.model('Device', DeviceSchema),
       inject: ['DATABASE_CONNECTION'],
     },
   ],

@@ -3,7 +3,7 @@ import {
   Get,
   Post,
   Body,
-  Patch,
+  Put,
   Param,
   Delete,
 } from '@nestjs/common';
@@ -33,16 +33,16 @@ export class DeviceController {
     return await this.deviceService.findOne(id);
   }
 
-  // @Patch(':id')
-  // async update(
-  //   @Param('id') id: string,
-  //   @Body() updateDeviceDto: UpdateDeviceDto,
-  // ) {
-  //   return await this.deviceService.update(id, updateDeviceDto);
-  // }
+  @Put(':id')
+  async update(
+    @Param('id') id: string,
+    @Body() updateDeviceDto: UpdateDeviceDto,
+  ) {
+    return await this.deviceService.update(id, updateDeviceDto);
+  }
 
-  // @Delete(':id')
-  // async remove(@Param('id') id: string) {
-  //   return await this.deviceService.remove(id);
-  // }
+  @Delete(':id')
+  async delete(@Param('id') id: string) {
+    return await this.deviceService.delete(id);
+  }
 }
